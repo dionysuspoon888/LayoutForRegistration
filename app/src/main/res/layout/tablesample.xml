@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        >
+        <!--
+            * TableLayout is a layout that arranges its children into rows and columns.
+            * A TableLayout consists of a number of TableRow objects, each defining a row.
+            * Each row has zero or more cells.
+            * Each cell can hold one View object.
+            * TableLayout containers do not display border lines for their rows, columns, or cells.
+            * The table has as many columns as the row with the most cells.
+            * A table can leave cells empty. Cells can span columns.
+            * The width of a column is defined by the row with the widest cell in that column.
+            * TableLayout can specify certain columns as shrinkable or stretchable
+              by calling setColumnShrinkable() or setColumnStretchable().
+            * In this example code we generate border for table and its columns, rows and cells.
+        -->
+        <TableRow
+            android:id="@+id/tr_header"
+            android:background="@drawable/table_row_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:id="@+id/tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                android:background="@drawable/table_cell_bg"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_unit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit Price"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:paddingLeft="10dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tr_item_1"
+            android:background="@drawable/table_row_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:id="@+id/tv_product_item_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, Android, 4th Edition"
+                android:background="@drawable/table_cell_bg"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_author_item_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ed Burnette"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_quantity_item_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="right"
+                />
+            <TextView
+                android:id="@+id/tv_unit_price_item_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$36.00"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="right"
+                />
+            <TextView
+                android:id="@+id/tv_price_item_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$72.00"
+                android:paddingLeft="10dp"
+                android:layout_gravity="right"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tr_item_2"
+            android:background="@drawable/table_row_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:id="@+id/tv_product_item_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High Performance Android Apps"
+                android:background="@drawable/table_cell_bg"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_author_item_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doug Sillars"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_quantity_item_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="right"
+                />
+            <TextView
+                android:id="@+id/tv_unit_price_item_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$44.99"
+                android:background="@drawable/table_cell_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="right"
+                />
+            <TextView
+                android:id="@+id/tv_price_item_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$134.97"
+                android:paddingLeft="10dp"
+                android:layout_gravity="right"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tr_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_row_last_bg"
+            android:padding="5dp"
+            >
+            <!-- layout_span is table column span -->
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total = $206.97"
+                android:layout_span="5"
+                android:layout_gravity="right"
+                android:textStyle="italic"
+                />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

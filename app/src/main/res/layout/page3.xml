@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        >
+
+        <TableRow
+            android:background="@drawable/table_row_last_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="安全提示問題 1"
+                android:padding="2dp"
+                android:textSize="16sp"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow
+            android:background="@drawable/table_row_last_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答案"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:paddingRight="10dp"
+                />
+
+
+
+        </TableRow>
+        <TableRow
+            android:background="@drawable/table_row_last_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="安全提示問題 2"
+                android:padding="2dp"
+                android:textSize="16sp"
+                />
+
+
+
+        </TableRow>
+        <TableRow
+            android:background="@drawable/table_row_last_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答案"
+                android:padding="2dp"
+                android:textSize="16sp"
+
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_row_last_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="安全提示問題 3"
+                android:padding="2dp"
+                android:textSize="16sp"
+                />
+
+        </TableRow>
+        <TableRow
+            android:background="@drawable/table_row_last_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答案"
+                android:padding="2dp"
+                android:textSize="16sp"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/hr1"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#0a6db9" />
+
+    <LinearLayout
+        android:id="@+id/ll_middle"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/hr1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="取得ABC最新消息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:text="我同意服務條款"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="120dp"
+                android:layout_height="100dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:hint="請輸入圖中的字元"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="發驗證碼"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:text="下一步"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"/>
+</RelativeLayout>

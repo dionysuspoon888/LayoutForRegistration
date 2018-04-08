@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.layoutforregistration.MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="15dp"
+        android:hint="手機號碼">
+    </EditText>
+
+
+<LinearLayout
+    android:layout_marginTop="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:text="完成驗證碼"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="15dp"
+        android:hint="驗證碼">
+    </EditText>
+</LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="15dp"
+        android:hint="密碼">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="15dp"
+        android:hint="確認密碼">
+    </EditText>
+
+    <View
+        android:layout_marginTop="12dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#0a6db9" />
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

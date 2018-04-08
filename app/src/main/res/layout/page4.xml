@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        >
+
+    <TableRow
+        android:background="@drawable/table_row_last_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xx服務登錄碼"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:layout_column="1"
+            />
+        <EditText
+            android:layout_marginLeft="30dp"
+            android:layout_column="2"/>
+
+    </TableRow>
+    </TableLayout>
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            >
+            <TableRow
+                android:background="@drawable/table_row_last_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="咭面上的公司名稫稱"
+                    android:padding="2dp"
+                    android:textSize="16sp"
+
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:background="@drawable/table_row_last_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:padding="2dp"
+                    android:textSize="16sp"
+                    android:paddingRight="10dp"
+                    />
+
+
+
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            >
+            <TableRow
+                android:background="@drawable/table_row_last_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="圖上的公司名稫稱"
+                    android:padding="2dp"
+                    android:textSize="16sp"
+
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:background="@drawable/table_row_last_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:padding="2dp"
+                    android:textSize="16sp"
+                    android:paddingRight="10dp"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:background="@drawable/table_row_last_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="會員編號"
+                    android:padding="2dp"
+                    android:textSize="16sp"
+                    android:paddingRight="10dp"
+                    />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:text="提交"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"/>
+
+</RelativeLayout>
